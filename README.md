@@ -2,6 +2,8 @@
 
 **Markdown Preview** is a Vim Plugin to visualize Markdown documents with the Github styles.
 
+>> Markdown Preview can't load images or videos.
+
 # Install
 
 Use your favorite vim plugin manager, like
