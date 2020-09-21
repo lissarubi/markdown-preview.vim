@@ -2,8 +2,6 @@
 
 **Markdown Preview** is a Vim Plugin to visualize Markdown documents with the Github styles.
 
-![Exemple](assets/exemple.gif)
-
 # Install
 
 Use your favorite vim plugin manager, like
