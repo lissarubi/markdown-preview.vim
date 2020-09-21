@@ -16,7 +16,9 @@ Plug 'edersonferreira/markdown-preview.vim'
 call plug#end()
 ```
 
-And install the PHP and Ruby languages. Using the package manager from your system.
+# Dependencies
+
+Install the PHP and Ruby languages. Using the package manager from your system.
 
 # Configuration
 
