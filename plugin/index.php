@@ -7,7 +7,7 @@ require_once 'vendor/autoload.php';
 $router = new Router(new Request());
 
 $router->get('/', function () {
-  $data = file_get_contents('/tmp/automarkdata');
+  $data = file_get_contents('/tmp/markdownpreviewdata');
   return $data;
 });
 
@@ -16,5 +16,5 @@ $router->post('/', function ($request) {
   $dataMarkdown = $request->getBody()['data'];
   $parsedown->setBreaksEnabled(true);
   $dataHTML = $parsedown->text($dataMarkdown);
-  file_put_contents('/tmp/automarkdata', $dataHTML);
+  file_put_contents('/tmp/markdownpreviewdata', $dataHTML);
 });
