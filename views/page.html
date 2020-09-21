@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown Preview</title>
+    <link rel="stylesheet" href="default.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script>
+
+      async function getData(){
+      data = await axios.get('http://localhost:8537')
+      document.getElementsByTagName('body')[0].innerHTML = data.data
+      }
+
+      getData()
+
+      setInterval(getData, 500)
+    </script>
+
+  </head>
+  <body>
+  </body>
+</html>
