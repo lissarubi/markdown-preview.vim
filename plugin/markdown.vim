@@ -5,8 +5,8 @@ function! MDPreview()
   
   if (g:serverInit == 0)
     let g:serverInit = 1
-    silent execute "!firefox " . s:path . "/views/page.html &"
     silent execute "!php -S localhost:8537 -t " . s:path . " &"
+    silent execute "!" . g:markdownpreview#browser . " " . s:path . "/views/page.html &"
 
     augroup SendData
     autocmd BufWritePost *.md call SendData()
