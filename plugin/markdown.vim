@@ -25,4 +25,4 @@ function! SendData()
   silent execute  "!ruby " s:path . "/SendData.rb " @%
 endfunction
 
-command! -bar Server call Server()
+command! -bar MDPreview call MDPreview()
